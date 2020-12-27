@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+</head>
+<body>
+<h1>Kirjoita palaute</h1>
+Tuotekoodi <input id="koodi" placeholder="Tuotekoodi"/><br/><br/>
+Tuotenimi <input id="nimi" placeholder="Tuotenimi"/><br/><br/>
+
+<h2>Anna tuotteelle kokonaisarvio</h2>
+<p>1 = Huono, 2 = Kohtalainen, 3 = Hyvä, 4 = Erittäin hyvä, 5 = Erinomainen</p>
+    Arvioi tuote<br/>
+    <input type="radio" id="1"> 1
+    <input type="radio" id="2"> 2
+    <input type="radio" id="3"> 3
+    <input type="radio" id="4"> 4
+    <input type="radio" id="5"> 5
+    <br/>
+
+<h2>Anna kehittämisehdotuksia</h2>
+<p>Kirjoita kehittämisehdotuksia</p>
+<textarea id="palaute" rows="4" cols="50"></textarea>
+<h2>Tietojen lähetys</h2>
+<button type="button" id="nappi">Tallenna</button>
+
+<script src="app.js"></script>
+</body>
+</html>

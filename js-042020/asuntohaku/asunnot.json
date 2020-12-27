@@ -1,0 +1,32 @@
+[
+{
+"kohdenumero" : "1",
+"katuosoite" : "Mannintie 5",
+"postinumero" : "51200",
+"postitoimipaikka" : "Kangasniemi",
+"hinta" : "38 000",
+"kuva1" : "1/kuva (1).jpg",
+"kuva2" : "1/kuva (2).jpg",
+"kuva3" : "1/kuva (3).jpg"
+},
+{
+"kohdenumero" : "2",
+"katuosoite" : "Tiivikatu 23",
+"postinumero" : "47200",
+"postitoimipaikka" : "Elimäki",
+"hinta" : "62 000",
+"kuva1" : "2/kuva (1).jpg",
+"kuva2" : "2/kuva (2).jpg",
+"kuva3" : "2/kuva (3).jpg"
+},
+{
+"kohdenumero" : "3",
+"katuosoite" : "Roovikuja 41",
+"postinumero" : "48600",
+"postitoimipaikka" : "Karhula",
+"hinta" : "31 000",
+"kuva1" : "3/kuva (1).jpg",
+"kuva2" : "3/kuva (2).jpg",
+"kuva3" : "3/kuva (3).jpg"
+}
+]

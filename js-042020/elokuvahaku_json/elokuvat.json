@@ -1,0 +1,72 @@
+[
+{
+"numero" : "1",
+"elokuva" : "Eight Below",
+"vuosi" : "2006",
+"kategoria" : "Draama", 
+"ohjaaja" : "Frank Marshall"
+},
+{
+"numero" : "2",
+"elokuva" : "Hacksaw Ridge",
+"vuosi" : "2016",
+"kategoria" : "Sota", 
+"ohjaaja" : "Mel Gibson"
+},
+{
+"numero" : "3",
+"elokuva" : "Lucy",
+"vuosi" : "2014",
+"kategoria" : "Toiminta", 
+"ohjaaja" : "Luc Besson"
+},
+{
+"numero" : "4",
+"elokuva" : "Menolippu Mombasaan",
+"vuosi" : "2002",
+"kategoria" : "Draama", 
+"ohjaaja" : "Hannu Tuomainen"
+},
+{
+"numero" : "5",
+"elokuva" : "The Martian",
+"vuosi" : "2015",
+"kategoria" : "Tiede", 
+"ohjaaja" : "Ridley Scott"
+},
+{
+"numero" : "6",
+"elokuva" : "Warm Bodies",
+"vuosi" : "2013",
+"kategoria" : "Zombikomedia", 
+"ohjaaja" : "Jonathan Levine"
+},
+{
+"numero" : "7",
+"elokuva" : "The Lucky One",
+"vuosi" : "2012",
+"kategoria" : "Draama", 
+"ohjaaja" : "Scott Hicks"
+},
+{
+"numero" : "8",
+"elokuva" : "Hevireissu",
+"vuosi" : "2018",
+"kategoria" : "Komedia", 
+"ohjaaja" : "Jukka Vidgren, Juuso Laatio"
+},
+{
+"numero" : "9",
+"elokuva" : "Fury",
+"vuosi" : "2014",
+"kategoria" : "Sota", 
+"ohjaaja" : "David Ayer"
+},
+{
+"numero" : "10",
+"elokuva" : "Inception",
+"vuosi" : "2010",
+"kategoria" : "Tiede", 
+"ohjaaja" : "Christopher Nolan"
+}
+]
