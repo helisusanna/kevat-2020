@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bouncers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+  </style>
+</head>
+<body onload="checkbox()" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div class="modal" id="fanibtn">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <h4 class="modal-title">Lähetä fanipostia</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <div class="modal-body">
+          <form action="/action_page.php">
+            <div class="form-group">
+              <label for="vastaanottaja" style="color:#070D0C">Vastaanottaja</label>
+              <input type="text" class="form-control" id="vastaanottaja" placeholder="Kenelle haluat lähettää fanipostia" name="vastaanottaja">
+            </div>
+            <div class="form-group">
+              <label for="terveiset" style="color:#070D0C">Terveiset</label>
+              <textarea class="form-control" rows="5" id="terveiset" placeholder="Kirjoita terveiset tähän"></textarea>
+            </div>
+  
+            <div class="form-group form-check">
+              <label class="form-check-label" style="color:#070D0C">
+                <input class="form-check-input" type="checkbox" name="email" id="box" onclick="checkbox()"> Haluan vastauksen sähköpostiin
+                <div id ="email">
+                  <input type="text" class="form-control" id="email" placeholder="Sähköpostiosoite" name="email">
+                </div>
+              </label>
+            </div>
+          </form>
+  
+        <div class="modal-footer">
+          <button type="submit" class="btn" style="background-color:#F2CE16">Lähetä</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Sulje</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+<nav class="navbar navbar-expand-md navbar-dark sticky-top" id="top-navbar">
+      <a href="index.html"><img class="img-responsive" src="bouncers_logo.png" alt="Logo" id="logo"></a>
+      <button onclick="checkbox()" type="button" class="btn" data-toggle="modal" data-target="#fanibtn" id="fanibtn" style="color:#5B6161">
+        <i class="fa fa-envelope"></i> Faniposti
+      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#ajankohtaista" onclick="ajankohtaista()">Ajankohtaista</a>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link" href="galleria.html">Galleria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#yhteys">Yhteys</a>
+            </li>
+            <li class="nav-item" id="mobile">
+              <a class="nav-link" href="https://www.stadiumteamsales.fi/" target="_blank">Fanituotteet</a>
+            </li>
+            <li class="nav-item dropdown" id="tablet">
+              <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                Fanit
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#faniposti">Faniposti</a>
+                <a class="dropdown-item" href="https://www.stadiumteamsales.fi/" target="_blank">Fanituotteet</a>
+              </div>
+            </li>
+          </ul>
+        </div>  
+</nav>
+
+<nav class="navbar navbar-expand-sm" id="navbar-header">
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" style="color:#151716">
+                Miehet
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#miehet">Ottelut</a>
+                <a class="dropdown-item" href="#">Joukkue</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" style="color:#151716">
+                Naiset
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#naiset">Ottelut</a>
+                <a class="dropdown-item" href="#">Joukkue</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" style="color:#151716">
+                Juniorit
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#juniorit">Ottelut</a>
+                <a class="dropdown-item" href="#">Joukkue</a>
+              </div>
+            </li>
+          </ul>
+        </div>  
+</nav>
+
+<div class="container" id="desktop">
+<div class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="pics/(1).jpg" style="width:50%" alt="image">
+          </div>
+          <div class="carousel-item">
+            <img src="pics/(6).jpg" style="width:50%" alt="image">
+          </div>
+          <div class="carousel-item">
+            <img src="pics/(7).jpg" style="width:50%" alt="image">
+          </div>
+          <div class="carousel-item">
+            <img src="pics/(9).jpg" style="width:50%" alt="image">
+          </div>
+        </div>
+
+</div>
+</div>
+
+<div class="carousel slide" data-ride="carousel" id="karuselli">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pics/(1).jpg" style="width:100%" alt="image">
+    </div>
+    <div class="carousel-item">
+      <img src="pics/(6).jpg" style="width:100%" alt="image">
+    </div>
+    <div class="carousel-item">
+      <img src="pics/(7).jpg" style="width:100%" alt="image">
+    </div>
+    <div class="carousel-item">
+      <img src="pics/(9).jpg" style="width:100%" alt="image">
+    </div>
+  </div>
+
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0" id="mobile">
+  <h5>miehet, seuraava ottelu</h5>
+  <p style="font-weight:bold">LA 1.6. KLO 16:00 / CRUSADERS vs BOUNCERS</p>
+  <p>Harjun kenttä, Lohja</p>
+  <h5>naiset, seuraava ottelu</h5>
+  <p style="font-weight:bold">LA 11.5 KLO 14.00 / CROCODILES vs LADY BOUNCERS</p>
+  <p>Jouppilanvuoren tekonuermi, Seinäjoki</p>
+</div>
+
+<div class="container-fluid">
+    <div class="row" style="padding:3%">
+    <div class="col-md-8" id="ajankohtaista">
+      <h2>Ajankohtaista</h2>
+      <ul class="list-group">
+        <li class="list-group-item" style="background-color:#151716">
+      <h6>06.01.2020</h6>
+      <button class="btn" data-toggle="collapse" data-target="#ajankohtaista-1" style="color:#F2A922">Mikkeli Bouncers luopuu paikastaan miesten 1. divisioonassa</button>
+      <div id="ajankohtaista-1" class="collapse">
+        Mikkeli Bouncersin miesten edustusjoukkue ei osallistu kaudella 2020 amerikkalaisen jalkapallon 1. divisioonaan. Valitettavan luopumisen taustalla on liian kapea pelaajarunko, joka ei tulisi kestämään tulevan kauden sarjaohjelman läpivientiä.
+
+        Miesten edustusjoukkue aloittaa joukkueen jälleenrakentamisen hakien vauhtia 3. divisioonasta.
+        
+        Uusien pelaajien toivotaan löytävän lajin pariin. Bouncersin lajiharjoituksiin voi tulla mukaan treenaamaan milloin vain. Treenit järjestetään Kalevankankaan kuplahallissa tiistaisin ja torstaisin klo 20.00-22.00.
+        
+        Lisäksi erillinen lajikokeilu järjestetään uusille torstaina 23.1. klo 20.oo-22.00 Kalevankankaan kuplahallilla. Täysin ilmainen lajikokeilu on avoin niin miehille, naisille kuin junioreille.
+        
+        Mikkeli Bouncers jatkaa kehittäen toimintaansa kaikilla osa-alueilla niin miesten, naisten ja junioreiden amerikkalaisessa jalkapallossa sekä lippupallossa. 
+        
+        Lisätietoja miesten joukkueesta: ilkka.jamsa@bouncers.fi
+      </div>
+    </li>
+    <li class="list-group-item" style="background-color:#151716">
+      <h6>21.10.2019</h6>
+      <button class="btn" data-toggle="collapse" data-target="#ajankohtaista-2" style="color:#F2A922">Bouncers 10 vuotta!</button>
+      <div id="ajankohtaista-2" class="collapse">
+        Bouncersin 10-vuotista taivalta juhlittiin 19.10. lauantaina Urpolan Kartanolla. Samalla paketoitiin kausi 2019 palkitsemalla ansioituneita pelaajia ja seuratoimijoita.
+      </div>
+    </li>
+    <li class="list-group-item" style="background-color:#151716">
+      <h6>15.8.2019</h6>
+      <button class="btn" data-toggle="collapse" data-target="#ajankohtaista-3" style="color:#F2A922">Miesten kausi päättyi välierään</button>
+      <div id="ajankohtaista-3" class="collapse">
+        Bouncers kohtasi miesten 1-divisioonan välieräottelussa tutun vastustajan Pori Bearsin Porin urheilukeskuksen tekonurmella.
+        Ennakkoasetelmissa Bouncers oli selkeästi haastajan asemassa, Porin hävittyä runkosarjassa ainoastaan kahdesti kärkijoukkue Kotka Eaglesille. Bouncers taas vuorostaan oli päässyt välierään arvonnan kautta.
+        Peli alkoikin isäntäjoukkueen komennossa, kun Pori eteni vahvasti aina maalialueelle saakka väkivahvan brittikeskushyökkääjänsä #16 Andy Owusun toimesta.
+        Bouncers kuitenkin tuli heti seuraavalla hyökkäysvuorolla rinnalle ja ohi, kun ensin TE #88 Iiro Paakki nappasi QB #86 Henri Heiskasen heiton maalialueella kiinni ja WR #85 Teemu Puukka vuorostaan löytyi vapaana maalialueelta pelatussa lisäpisteyrityksessä. Peli tämän jälkeen 7-8.
+      </div>
+    </li>
+    <li class="list-group-item" style="background-color:#151716">
+      <h6>22.03.2019</h6>
+      <button class="btn" data-toggle="collapse" data-target="#ajankohtaista-4" style="color:#F2A922">Bouncersin flagikausi päättyi yhtä ottelua liian aikaisin</button>
+      <div id="ajankohtaista-4" class="collapse">
+        Bouncers otti osaa flagin Halli SM -sarjaan, joka pelattiin turnausmuotoisesti. Kauden tavoitteeksi joukkue oli yksimielisesti asettanut vähintään pronssimitalin. Runkosarjassa toiseksi sijoittunut Bouncers keräsi turnauksista 6 voittoa ja 2 häviötä. Molempiin tappioihin Bouncers taipui kohdatessaan Helsinki Wolverinesin. Runkosarjasta edettiin näin välieriin ja tavoite näyttikin olevan saavutettavissa vakuuttavan runkosarjan jälkeen. Joukkue lähti kauden viimeiseen turnaukseen hyvin valmistautuneena hakemaan paikkaa loppuottelussa välieräottelun voittamalla.
+      </div>
+    </li>
+    <li class="list-group-item" style="background-color:#151716">
+      <h6>22.02.2019</h6>
+      <button class="btn" data-toggle="collapse" data-target="#ajankohtaista-5" style="color:#F2A922">Amerikkalaisvahvuutta Bouncersin väreihin</button>
+      <div id="ajankohtaista-5" class="collapse">
+        Ensimmäiseen 1.divisioonakauteen valmistautuva joukkue saa ulkomaalaisvahvistusta rosteriin. Kalifornialaislähtöinen Chris Hall tuo myös omalta pitkältä peliuraltaan paljon tietotaitoa lisää joukkueen harjoitteluun ja toimintaan.
+        – Ensisijaisesti Chris tulee pelaamaan puolustuksen takakentällä, toteaa joukkueen päävalmentaja Ilkka Jämsä.
+        Viime kaudella Chrisin pelatessa 1.divisioonassa Kouvola Indiansin paidassa, hän oli koko divisioonan tilastoykkönen taklaustilastoissa saaden 38 taklausta, joista 18 avustettuja taklauksia, keskiarvon ollessa 7,6 taklausta peliä kohden. Chris oli myös koko sarjan paras aloituspotkunpalauttaja edeten 484 jaardia 28,5 jaardin yrityskeskiarvolla.
+      </div>
+    </li>
+    </ul>
+    </div>
+    <div class="col-sm-4" id="faniposti" style="padding-bottom:10%">
+        <h2>Faniposti</h2>
+        <form action="/action_page.php" class="was-validated">
+          <div class="form-group">
+            <label for="vastaanottaja" style="color:#F2A922">Vastaanottaja</label>
+            <input type="text" class="form-control" id="vastaanottaja" placeholder="Kenelle haluat lähettää fanipostia" name="vastaanottaja" required>
+          </div>
+          <div class="form-group">
+            <label for="terveiset" style="color:#F2A922">Terveiset</label>
+            <textarea class="form-control" rows="5" id="terveiset" placeholder="Kirjoita terveiset tähän" required></textarea>
+          </div>
+
+          <div class="form-group form-check">
+            <label class="form-check-label" style="color:#F2A922">
+              <input class="form-check-input" type="checkbox" name="email" id="Box" onclick="checkbox()"> Haluan vastauksen sähköpostiin
+              <div id ="email">
+                <input type="text" class="form-control" id="Email" placeholder="Sähköpostiosoite" name="email">
+              </div>
+            </label>
+          </div>
+          <button type="submit" class="btn" style="background-color:#F2CE16">Lähetä</button>
+        </form>
+    </div>
+    <div class="col-sm-4">
+      <h2>Ottelut</h2>
+      <ul class="list-group" style="color:#F2EED8">
+        <li class="list-group-item" style="background-color:#151716">
+      <button class="btn" data-toggle="collapse" data-target="#miehet" style="color:#F2A922">Miehet</button>
+      <div id="miehet" class="collapse show">
+        <p>LA 1.6. KLO 16:00 / CRUSADERS vs BOUNCERS</p>
+        <p style="color:#5B6161">Harjun kenttä, Lohja</p>
+        <p>LA 8.6 KLO 14.00 / BOUNCERS vs BEARS</p>
+        <p style="color:#5B6161">Urpolan tekonurmikenttä, Mikkeli</p>
+        <p>SU 16.6 KLO 15.00 / EAST CITY GIANTS vs BOUNCERS</p>
+        <p style="color:#5B6161">Myllypuro, Helsinki</p>
+        <p>LA 29.6 KLO 16.00 / EAGLES vs BOUNCERS</p>
+        <p style="color:#5B6161">Karhulan keskuskenttä, Kotka</p>
+        <p>LA 13.7 KLO 14.00 / BOUNCERS VS CRUSADERS</p>
+        <p style="color:#5B6161">Urpolan tekonurmikenttä, Mikkeli</p>
+      </div>
+    </li>
+    </ul>
+    </div>
+    <div class="col-sm-4">
+    <ul class="list-group" style="color:#F2EED8">
+      <li class="list-group-item" style="background-color:#151716">
+      <button class="btn" data-toggle="collapse" data-target="#naiset" style="color:#F2A922">Naiset</button>
+      <div id="naiset" class="collapse show">
+        <p>LA 1.6. KLO 16:00 / CRUSADERS vs BOUNCERS</p>
+        <p style="color:#5B6161">Harjun kenttä, Lohja</p>
+        <p>LA 8.6 KLO 14.00 / BOUNCERS vs BEARS</p>
+        <p style="color:#5B6161">Urpolan tekonurmikenttä, Mikkeli</p>
+        <p>SU 16.6 KLO 15.00 / EAST CITY GIANTS vs BOUNCERS</p>
+        <p style="color:#5B6161">Myllypuro, Helsinki</p>
+        <p>LA 29.6 KLO 16.00 / EAGLES vs BOUNCERS</p>
+        <p style="color:#5B6161">Karhulan keskuskenttä, Kotka</p>
+        <p>LA 13.7 KLO 14.00 / BOUNCERS VS CRUSADERS</p>
+        <p style="color:#5B6161">Urpolan tekonurmikenttä, Mikkeli</p>
+      </div>
+    </li>
+    <li class="list-group-item" style="background-color:#151716">
+      <button class="btn" data-toggle="collapse" data-target="#juniorit" style="color:#F2A922">Juniorit</button>
+      <div id="juniorit" class="collapse show">
+        <p>-</p>
+      </div>
+    </li>
+    </ul>
+  </div>
+    <div class="col-md-4" id="yhteys">
+      <h2>Yhteys</h2>
+        <div style="padding:5%">
+          <p style="color:#F2EED8">Hallituksen puheenjohtaja</p>
+          <p style="color:#5B6161">Miia Liukkonen</p>
+          <p style="color:#5B6161">040 757 6547</p>
+          <p style="color:#5B6161">puheenjohtaja@bouncers.fi</p>
+          <p style="color:#F2EED8">Valmennuspäällikkö</p>
+          <p style="color:#5B6161">Ilkka Jämsä</p>
+          <p style="color:#5B6161">ilkka.jamsa@bouncers.fi</p>
+          <p style="color:#F2EED8">Junioripäällikkö</p>
+          <p style="color:#5B6161">Sami Hölttä</p>
+          <p style="color:#5B6161">holttasami77@gmail.com</p>
+          <p style="color:#F2EED8">Rahastonhoitaja</p>
+          <p style="color:#5B6161">Merja Hölttä</p>
+          <p style="color:#5B6161">rahastonhoitaja@bouncers.fi</p>
+          </div>
+          </div>
+        </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <a href="https://www.facebook.com/MikkeliBouncers/" target="_blank" style="padding:0.7%"><i class="fa fa-facebook-square"></i></a>
+  <a href="https://www.instagram.com/bouncersfootball/?hl=fi" target="_blank" style="padding:0.7%"><i class="fa fa-instagram"></i></a>
+  <a href="https://twitter.com/intent/tweet?text=Yhteystiedot&url=http%3A%2F%2Fwww.bouncers.fi%2Fyhteystiedot%2F" target="_blank" style="padding:0.7%"><i class="fa fa-twitter"></i></a>
+</div>
+
+<script>
+  function checkbox() {
+  let box = document.getElementById("box");
+  let email = document.getElementById("email");
+
+  if (box.checked == true){
+    email.style.display = "block";
+  } else {
+    email.style.display = "none";
+  }
+
+  if (Box.checked == true){
+    Email.style.display = "block";
+  } else {
+    Email.style.display = "none";
+  }
+}
+
+function ajankohtaista(){
+  $("#ajankohtaista-1").addClass("collapse show");
+  $("#ajankohtaista-2").addClass("collapse show");
+  $("#ajankohtaista-3").addClass("collapse show");
+  $("#ajankohtaista-4").addClass("collapse show");
+  $("#ajankohtaista-5").addClass("collapse show");
+}
+</script>
+</body>
+</html>

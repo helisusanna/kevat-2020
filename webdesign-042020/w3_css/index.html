@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Tähtitieteilijät</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<!--lähde https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm-->
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-col img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-col img:hover{opacity:1}
+.w3-half img:hover{opacity:1}
+</style>
+<body class="w3-black">
+
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Sulje</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64 w3-text-indigo"><b>Tähtitieteilijät</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-indigo">Tervetuloa</a> 
+    <a href="#tietoa" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-indigo">Tietoa tähtitieteestä</a> 
+    <a href="#galaksit" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-indigo">Galaksit</a> 
+    <a href="#kehitys" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-indigo">Tähtien synty ja kehitys</a> 
+    <a href="#aurinkokunta" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-indigo">Aurinkokuntamme</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-indigo">Ota yhteyttä</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-light-gray w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-light-gray w3-margin-right" onclick="w3_open()">☰</a>
+  <span class="w3-text-indigo">Tähtitieteilijät</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b class="w3-jumbo w3-text-amber">Tervetuloa. </b><b>Tähtitieteilijät</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+  </div>
+  
+  <!-- "Etusivu" -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="pics/tahdet.jpg" style="width:100%" onclick="onClick(this)" alt="Tähdet">
+    </div>
+
+    <div class="w3-half">
+      <img src="pics/aurinko.jpg" style="width:100%" onclick="onClick(this)" alt="Aurinko">
+    </div>
+  </div>
+
+  <!-- Kuvien modaali-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Tietoa -->
+  <div class="w3-container" id="tietoa" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-amber"><b>Tietoa tähtitieteestä</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <div class="w3-row-padding">
+      <div class="w3-col m10 w3-margin-bottom">
+            <h4 class="w3-text-orange" style="margin-bottom:0">Tähtitieteellisen tutkimuksen piiriin kuuluu aivan kaikki ilmakehän ulkopuolella oleva -</h4><h4 style="margin-top:0">- Kuu, oma aurinkokuntamme, sen lähitähdet, oma galaksimme Linnunrata, 
+              sen naapurigalaksit ja koko universumin galaksipaljous. </h4>
+            <p>Aina 1600-luvulle saakka kaikki tähtitieteelliset havainnot piti tehdä paljain silmin. Kaukoputken keksimisen myötä saatettiin nähdä kauempana olevia ja himmeämpiä kohteita, ja maailmankuvamme mullistui. 
+              Maa ei ollutkaan maailmankaikkeuden keskipiste, vaan planeettamme kiersikin Aurinkoa, joka sekin oli vain yksi monista tähdistä Linnunradan tähtimuodostelmassa. 
+            </p>
+            <p>Valokuvauksen keksiminen 1800-luvun alkupuolella mullisti tähtitieteen uudelleen. Entistä himmeämpiä kohteita saatiin havaittua, kun niistä voitiin tehdä pitkiä valotuksia. Lisäksi taivaan kohteet saatiin 
+              nyt ikuistettua jälkipolville ja niissä tapahtuvat muutokset voitiin huomata. näin löytyi esim. kääpiöplaneetta <a href="https://www.ursa.fi/extra/kosmos/p/pluto.html" class="w3-text-amber w3-hover-indigo">Pluto</a>, pieni liikkuva piste tähtimeren seassa. 
+            </p>
+            <p>Radiotähtitiede keksittiin, kun sotilaskäyttöön kehitetty radioantenni havaitsi Linnunradan keskuksesta tulevaa radiosäteilyä. 
+              Jo aiemmin oli ymmärretty, että näkyvä valo on vain yksi kapea siivu säteilystä, jota sähkö ja magnetismi aiheuttavat. 
+            </p>
+            <p>Radiotähtitiede avasi tietä uusille havaintomenetelmille kuten <a href="#" class="w3-text-amber w3-hover-indigo">infrapunatähtitieteelle</a> ja <a href="#" class="w3-text-amber w3-hover-indigo">röntgentähtitieteelle</a>. Nämä keksinnöt avasivat meille viimein ikkunan maailmankaikkeuteen, joka oli ollut meiltä aiemmin piilossa. 
+              Ymmärtämyksemme maailmankaikkeudesta on syventynyt merkittävästi näiden uusien havaintojen valossa. 
+            </p>
+            <div class="w3-panel w3-padding-large w3-padding-32"><h4 class="w3-center">Tähtitiede on kuitenkin edelleen myös sitä, että menee ulos pimeän aikaan ja katsoo omin silmin taivaalle.</h4>
+              <p class="w3-center">Kuun vaiheet, kuun- ja auringonpimennykset, meteoriparvien aiheuttamat tähdenlennot ja useimmat planeetat näkyvät hyvin myös paljain silmin. 
+              Toisinaan taivaan halki saattaa kulkea komeetta upeine pyrstöineen, ja revontulia näkyy taivaalla Etelä-Suomessakin, kun Auringon magneettinen aktiivisuus on huipussaan.
+              </p>
+            </div>
+            <p>Ammattitason tähtitiedettä voi edistää toisinaan myös harrastajavoimin. Jos omassa käytössä on kaukoputki, sen avulla voi tehdä sellaisia pitkäkestoisia tai nopeita havaintoja, joihin ammattilaislaitteet eivät ehdi. 
+              Tällä tavalla ovat suomalaisetkin tähtiharrastajat olleet mukana esimerkiksi <a href="#" class="w3-text-amber w3-hover-indigo">gammapurkausten</a> ja <a href="https://www.ursa.fi/extra/kosmos/s/supernova.html" class="w3-text-amber w3-hover-indigo">supernovien</a> ammattitutkimuksessa. 
+            </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Galaksit -->
+  <div class="w3-container" id="galaksit" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-amber"><b>Galaksit</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <div class="w3-row-padding">
+      <div class="w3-col m10 w3-margin-bottom">
+        <h4 style="margin-bottom:0">Galaksit ovat valtavia kaasusta, pölystä, pimeästä aineesta ja tähdistä muodostuneita rakenteita, joita painovoima pitää kasassa.</h4><h4 class="w3-text-orange" style="margin-top:0">Maailmankaikkeudessa arvellaan olevan ainakin 170 miljardia galaksia. </h4>
+        <p>Ensimmäiset galaksit muodostuivat alle miljardin vuoden kuluttua alkuräjähdyksestä, kun universumin täyttäneessä kaasussa olevat pienet tihentymät alkoivat tiivistyä entisestään painovoiman vaikutuksesta.</p>
+        <p>Galakseja on monen kokoisia ja näköisiä. Useimpien galaksien ytimessä uskotaan olevan supermassiivinen <a href="https://www.ursa.fi/extra/kosmos/m/musta_aukko.html" class="w3-text-amber w3-hover-indigo">musta aukko</a>. 
+          Galakseja ympäröi vaikeasti nähtävissä oleva pallomainen haloksi kutsuttu kehä, jossa on muutamia vanhoja tähtiä, pallomaisia tähtijoukkoja sekä runsaasti <a href="#" class="w3-text-amber w3-hover-indigo">pimeää ainetta</a>.</p>
+      </div>
+    </div>
+      <div class="w3-row-padding">
+        <div class="w3-col m6 w3-margin-bottom">
+            <img src="pics/galaksit2.jpg" style="width:100%" onclick="onClick(this)" alt="Spiraaligalaksit">
+            <h2 class="w3-xxlarge w3-text-indigo"><b>Spiraaligalaksit</b></h2>
+            <hr style="width:30px;border:3px solid darkgray" class="w3-round">
+            <div class="w3-container">
+              <h4>Tutunnäköiset spiraaligalaksit muodostavat epäsäännöllisten galaksien kanssa yhteensä noin 60 prosenttia kaikista tunnetun avaruuden galakseista.</h4>
+              <p>Monien spiraaligalaksien keskusalue on sauvamaisen muotoinen, ja näitä galakseja kutsutaan sauvaspiraaligalakseiksi. Myös oman galaksimme Linnunradan on huomattu olevan sauvaspiraaligalaksi. Aurinkokunta sijaitsee Linnunradan kiekon tasossa, ja meitä ympäröivä kiekko näkyy pimeällä yötaivaalla sumumaisena vanana.</p>
+              <p>Spiraaligalaksit ovat litteän kiekkomaisia. Niitten spiraalihaaroissa syntyy runsaasti nuoria tähtiä. Spiraalihaarojen välissä on hiukan vanhempia tähtiä, ja galaksien keskusaluetta kiertää vanhoja tähtiä.</p>
+            </div>
+        </div>
+        <div class="w3-col m6 w3-margin-bottom">
+            <img src="pics/galaksit3.jpg" style="width:95%" onclick="onClick(this)" alt="Elliptiset galaksit">
+            <h2 class="w3-xxlarge w3-text-indigo"><b>Elliptiset galaksit</b></h2>
+            <hr style="width:30px;border:3px solid darkgray" class="w3-round">
+            <div class="w3-container">
+              <h4>Universumin kaikkein massiivisimmat galaksit ovat elliptisiä galakseja, ja ainakin osan niistä uskotaan syntyvän galaksien yhteentörmäyksissä.</h4>
+              <p>Elliptiset galaksit muodostavat noin 10 - 15 prosenttia kaikista galakseista.</p>
+              <p>Ne ovat joko täysin pallomaisia tai hiukan pitkulaisia tähtimuodostelmia, joiden tähdet ovat pääasiassa vanhoja. Elliptisissä galakseissa on hyvin vähän kaasua, josta uusia tähtiä voisi muodostua.</p>
+            </div>
+        </div>
+      </div>
+  </div>
+
+   <!-- Tähtien synty ja kehitys -->
+  <div class="w3-container" id="kehitys" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-amber"><b>Tähtien synty ja kehitys</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <div class="w3-row-padding">
+      <div class="w3-col m10 w3-margin-bottom">
+        <h4 class="w3-text-orange" style="margin-bottom:0">Tähdet syntyvät, kun tähtienvälinen kaasu- ja pölypilvi luhistuu kasaan. Pilvi koostuu pääasiassa vedystä, joka on kaikkein kevyin alkuaine.</h4>
+        <p style="margin-top:0">Mukana on myös heliumia, pölyä (noin yksi prosentti) ja hiukan raskaampia alkuaineita.</p>
+        <p>Jos luhistuva pilvi on kovin pieni, tähtiä syntyy ehkä vain yksi, mutta toisinaan hyvin suuret pilvet alkavat luhistua ja tähtiä syntyy runsaasti. Usein puhutaankin tähtien syntyalueista. Valtaosa tähdistä löytyy systeemeistä, joissa toisiaan kiertää kaksi tai useampia tähtiä. </p>
+        <p>Kun pilvi luhistuu, sen ytimeen alkaa tiivistyä tähti (tai useampia tähtiä). Vaikuttaa siltä, että tähtien syntyessä niitten ympärille muodostuu pilven materiaalista hyvin yleisesti myös yksi tai useampia planeettoja. Tähdet ja planeetat siis syntyvät yhdessä. </p>
+        <p>Kun muodostumassa oleva tähti kerää lisää massaa emopilvestään, lämpötila sen ytimessä nousee. Jos tähti kerää tarpeeksi massaa (noin 18 prosenttia Auringon massasta), vety alkaa fuusioitua heliumiksi. Ellei massa riitä lämpötilan nostamiseen näin ylös, lopputuloksena on ns. ruskea kääpiö, joka säteilee hiljaksiin lämpöenergiaansa avaruuteen. </p>
+      </div>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-col m10 w3-margin-bottom">
+          <img src="pics/tahtijoukko.jpg" style="width:100%" onclick="onClick(this)" alt="Tähtijoukko">
+          <div class="w3-container">
+            <p class="w3-text-orange" >Kun vedyn fuusio on alkanut tähden ytimessä, tähteä aletaan kutsua pääsarjan tähdeksi.</p>
+          </div>
+        </div>
+        <div class="w3-col m6 w3-margin-bottom">
+          <img src="pics/galaksit.jpg" style="width:90%" onclick="onClick(this)" alt="Galaksit">
+          <div class="w3-container">
+            <p class="w3-text-orange" >Kun vedyn fuusio on alkanut tähden ytimessä, tähteä aletaan kutsua pääsarjan tähdeksi.</p>
+          </div>
+        </div>
+        <div class="w3-col m6 w3-margin-bottom">
+          <div class="w3-container">
+            <p>Kaikki tähdet massastaan riippumatta viettävät pääosan elinkaarestaan pääsarjassa muuttaen vetyä heliumiksi ja säteillen ulos fuusioprosesseissa muodostunutta energiaa. 
+              Mitä enemmän massaa tähdellä on, sitä kiivaammin se muuttaa vetynsä heliumiksi. Raskaimmissa tähdissä ytimen lämpötila on niin korkea, että myös helium ja sitä raskaammat alkuaineet fuusioituvat ja tuottavat energiaa. Vasta rauta on alkuaineena sellainen,
+              että sen ydinten liittäminen yhteen kuluttaa energiaa enemmän kuin tuottaa sitä, joten raudan fuusiota ei enää tapahdu tähdissä.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+   <!-- Aurinkokunta -->
+  <div class="w3-container" id="aurinkokunta" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-amber"><b>Aurinkokuntamme</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <div class="w3-row-padding">
+      <div class="w3-col m10">
+        <h4>Aurinkokunta muodostui noin 4,57 miljardia vuotta sitten suuren tähtienvälisen kaasupilven luhistuessa. Pilveen syntyi monia tiivistymiskeskuksia, joihin syntyi tähtiä. Oma Aurinkomme oli yksi niistä. </h4>
+        <p>Auringon ympärille muodostui pilven materiaalista kiekko, joka koostui pääasiassa vety- ja heliumkaasusta. Kiekon muodostumiseen meni noin 100 000 vuotta. Joukossa oli myös raskaampia alkuaineita kuten happea, 
+          hiiltä ja typpeä sekä erilaisista yhdisteistä muodostunutta pölyä, jota oli kaikesta aineesta noin yksi prosentti. Kun pölyhiukkaset törmäilivät toisiinsa kiekossa, alkoi muodostua suurempia kiinteitä kappaleita.</p>
+        <p>Planeetat muodostuivat niistä miljoonien vuosien törmäilyn seurauksena. Aurinkokunnassa on kahdentyyppisiä planeettoja: pieniä kiviplaneettoja sekä suuria kaasuplaneettoja.</p>
+      </div>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-col m5">
+          <h4 class="w3-text-orange" style="margin-bottom:0">Kaasuplaneetat</h4><p style="margin-top:0">muodostuivat ensin. Kaasuplaneetat muodostuivat kiekossa ns. jäärajan takana. Siellä etäisyys Auringosta oli niin suuri, että kaasumaiset aineet alkoivat jäätyä ja ne oli helpompaa kaapata planeettojen rakennusaineeksi.
+               Jouduttuaan planeetan pinnalle jäät kaasuuntuivat uudelleen ja muodostivat planeettojen paksut kaasukehät. </p>
+        </div>
+        <div class="w3-col m5">
+          <h4 class="w3-text-orange" style="margin-bottom:0">Kiviplaneetat</h4><p style="margin-top:0">ovat muodostuneet pääasiassa aurinkokunnan synnyttäneen pilven vähäisestä pölymäärästä. Ainoastaan Maalla ja Venuksella on merkittävän paksut kaasukehät. 
+              Kiviplaneetat muodostuivat sisemmässä aurinkokunnassa, jäärajan sisäpuolella. </p>
+        </div>
+        <div class="w3-col m10">
+          <img src="pics/aurinkokunta.jpg" style="width:70%" onclick="onClick(this)" alt="Aurinkokunta">
+          <div class="w3-container">
+            <p class="w3-text-orange" >Aurinko puolestaan imi itseensä jatkuvasti lisää materiaalia sitä ympäröivästä kiekosta.</p>
+          </div>
+          <p>Lopulta, noin 50 miljoonan vuoden jälkeen, Aurinko oli riittävän massiivinen alkaakseen muuttaa vetyä heliumiksi ytimessään. Näin Auringosta tuli täysikasvuinen tähti. 
+            Jo tätä ennen se oli kuitenkin puhaltanut voimakkaiden tähtituulien avulla kiekon ympäriltään, jättäen vain planeetat jäljelle.</p>
+        </div>
+    </div>
+  </div>
+
+  <!-- Yhteys -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-indigo"><b>Ota yhteyttä</b></h1>
+    <hr style="width:50px;border:3px solid darkgray" class="w3-round">
+    <p>Ota yhteyttä tähtitieteilijään</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label class="w3-tooltip">Nimi<span class="w3-text w3-tag w3-animate-opacity w3-text-orange">Kirjoita nimesi kenttään</span></label>
+        <input class="w3-input w3-border" type="text" name="Nimi" required>
+      </div>
+      <div class="w3-section">
+        <label class="w3-tooltip">Sähköposti<span class="w3-text w3-tag w3-animate-opacity w3-text-orange">Kirjoita sähköpostiosoitteesi kenttään</span></label>
+        <input class="w3-input w3-border" type="text" name="Sähköposti" required>
+      </div>
+      <div class="w3-section">
+        <label class="w3-tooltip">Viesti<span class="w3-text w3-tag w3-animate-opacity w3-text-orange">Kirjoita viesti</span></label>
+        <input class="w3-input w3-border" type="text" name="Viesti" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom">Lähetä</button>
+    </form>  
+  </div>
+
+</div>
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">www.ursa.fi Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

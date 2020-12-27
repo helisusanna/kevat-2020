@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Verkkokauppa | OT6</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo"><img src="pics/logo.png" alt="logo"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"><i class="material-icons">search</i></a></li>
+        <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="blogi.html">Blogi</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#section-contact">Yhteydenotto</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Miehet<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Naiset<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li style="margin:10px"><div class="input-field col s12">
+          <i class="material-icons prefix">search</i>
+          <input type="text" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">Hae</label>
+        </div></li>
+        <li style="margin-left:10px">Miehet</li>
+        <li><a href="miehet-ylaosat.html">Yläosat</a></li>
+        <li><a href="#">Alaosat</a></li>
+        <li><a href="#">Asusteet</a></li>
+        <li style="margin-left:10px">Naiset</li>
+        <li><a href="#">Yläosat</a></li>
+        <li><a href="#">Alaosat</a></li>
+        <li><a href="#">Asusteet</a></li>
+        <li style="margin-top:30px"><a href="#section-contact"><i class="material-icons">mail</i>Yhteydenotto</a></li>
+        <li><a href="blogi.html">Blogi</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">shopping_cart</i></a>
+    </div>
+  </nav>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="miehet-ylaosat.html">Yläosat</a></li>
+    <li><a href="#">Alaosat</a></li>
+    <li><a href="#">Asusteet</a></li>
+  </ul>
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="#">Yläosat</a></li>
+    <li><a href="#">Alaosat</a></li>
+    <li><a href="#">Asusteet</a></li>
+  </ul>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <h1 class="header center text-white"><b>Kevään muoti </b>on entistä sporttisempi<b>.</b></h1>
+        <div class="row center">
+          <h5 class="header col s12 light nomobile">10% alennus koodilla AW2020</h5>
+        </div>
+        <div class="row center">
+          <a href="#section-latest" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">katso kuvat ihanista takeista >></a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="background1"></div>
+  </div>
+
+
+  <div id="grey-box" class="container-fluid grey darken-2">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center white-text"><i class="material-icons">local_shipping</i></h2>
+            <h5 class="center white-text">Nopea toimitus</h5>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center white-text"><i class="material-icons">euro_symbol</i></h2>
+            <h5 class="center white-text">Tyytyväisyystakuu</h5>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center white-text"><i class="material-icons">group</i></h2>
+            <h5 class="center white-text">Luotettava</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h4 class="header col s12 light">Tänä keväänä saa pukeutua vielä viime kevättäkin sporttisemmin</h4>
+          <h6>unohda trenssit ja nahkarotsit, sillä juuri nyt on trendikkäintä vetäistä päälle sporttinen pusakkamallinen pilottitakki</h6>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section" id="section-latest">
+
+      <div class="row">
+        <div class="col s12 center" style="margin-bottom:2%">
+          <h3><i class="mdi-content-send blue-text"></i></h3>
+          <h2>Uutuudet</h2>
+          <h7>Mikäli muodikkuuden ohjenuorana pidetään julkkiksia ja muotibloggaajia, sporttinen pusakka todella on tämän kevään takki. Sen ei kuitenkaan tarvitse olla tylsä musta tai sininen, vaan kaikista muodikkain se on ihanan naisellisenna kukkakuosilla!</h7>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="pics/kuva1.jpg" class="materialboxed" width="650">
+            </div>
+            <div class="card-content">
+              <span class="new badge">Naiset</span>
+              <span class="new badge red">Uusi!</span>
+            </div>
+            <div class="card-action center">
+              <a href="#">29 €</a>
+            </div>
+          </div>
+        </div>
+
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="pics/kuva3.jpg" class="materialboxed" width="650">
+          </div>
+          <div class="card-content">
+            <span class="new badge">Naiset</span>
+            <span class="new badge red">Uusi!</span>
+          </div>
+          <div class="card-action center">
+            <a href="#">25 €</a>
+          </div>
+        </div>
+      </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="pics/kuva5.jpg" class="materialboxed" width="650">
+        </div>
+        <div class="card-content">
+          <span class="new badge">Miehet</span>
+          <span class="new badge red">Uusi!</span>
+        </div>
+        <div class="card-action center">
+          <a href="#">35 €</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="pics/kuva4.jpg" class="materialboxed" width="650">
+        </div>
+        <div class="card-content">
+          <span class="new badge">Naiset</span>
+          <span class="new badge red">Uusi!</span>
+        </div>
+        <div class="card-action center">
+          <a href="#">49 €</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="pics/kuva10.jpg" class="materialboxed" width="650">
+        </div>
+        <div class="card-content">
+          <span class="new badge">Miehet</span>
+          <span class="new badge red">Uusi!</span>
+        </div>
+        <div class="card-action center">
+          <a href="#">29€</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="pics/kuva9.jpg" class="materialboxed" width="650">
+        </div>
+        <div class="card-content">
+          <span class="new badge">Miehet</span>
+          <span class="new badge red">Uusi!</span>
+        </div>
+        <div class="card-action center">
+          <a href="#">39 €</a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="carousel carousel-slider parallax-container valign-wrapper">
+    <div class="carousel-item section no-pad-bot">
+      <div class="container">
+        <div class="row center" style="margin-top:5%">
+          <h4 class="header col s12 light">Kierrättäminen kannattaa: <b>Merkkivaatteissa arvo säilyy todella hyvin</b></h4>
+        </div>
+        <div class="row center">
+          <a class="waves-effect waves-light btn">Katso, mitkä merkit käyvät parhaiten kaupaksi käytettynä</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item section no-pad-bot">
+      <div class="container">
+        <div class="row center" style="margin-top:10%">
+          <h5 class="header col s12 light">Suomessa käytettyjen vaatteiden ja kenkien kierrättäminen on todella helppoa, sillä kauppa käy vilkkaana netissä.</h5>
+          <h5 class="header col s12 light">Monien merkkivaatteiden jälleenmyynti on taattu, joskus jopa voitolla.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item section no-pad-bot">
+      <div class="container">
+        <div class="row center" style="margin-top:2%">
+          <h4 class="header col s12 light">Viime vuosi tunnetaan erilaisista trendien sekoituksista.</h4>
+          <h5 class="header col s12 light">Yksi erikoisimmista trendeistä oli pesunkestävät terveyssandaalit vaatteiden kuin vaatteiden kanssa, mutta muoti jäänee tänä vuonna historiaan.</h5>
+        </div>
+        <div class="row center">
+          <a class="waves-effect waves-light btn" href="blogi.html">Katso mitkä muut viime vuoden villitykset jäänevät unholaan</a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="background"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <img src="pics/logo1.png" alt="logo">
+          <p class="grey-text text-lighten-4">Donec euismod leo id pulvinar pretium. Quisque a mauris at est hendrerit tempus id quis libero.</p>
+          <p class="grey-text text-lighten-4">Ut ac porta ex. In vitae venenatis quam, quis tristique</p>
+          <a class="brown-text text-lighten-3" href="http://facebook.com" style="margin:3%"><i class="fa fa-facebook"></i></a>
+          <a class="brown-text text-lighten-3" href="http://instagram.com" style="margin:3%"><i class="fa fa-instagram"></i></a>
+          <a class="brown-text text-lighten-3" href="http://linkedin.com" style="margin:3%"><i class="fa fa-linkedin"></i></a>
+          <a class="brown-text text-lighten-3" href="http://twitter.com" style="margin:3%"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="col l6 s12" id="section-contact">
+          <h5 class="white-text">Yhteydenotto</h5>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="input_text" type="text" data-length="30" class="white-text">
+                  <label for="input_text" class="white-text">Sähköpostiosoitteesi</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea2" class="materialize-textarea white-text" data-length="200"></textarea>
+                  <label for="textarea2" class="white-text">Kirjoita viesti</label>
+                  <a class="right waves-effect waves-light btn" href="#">Lähetä</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col l6 s12">
+          <ul>
+            <li><a class="white-text" href="#!">Oma tili</a></li>
+            <li><a class="white-text" href="#!">Maksuehdot</a></li>
+            <li><a class="white-text" href="#!">Toimitusehdot</a></li>
+          </ul>
+        </div>
+        <div class="col l6 s12">
+          <ul>
+            <li><a class="white-text" href="#!">Palautukset</a></li>
+            <li><a class="white-text" href="#!">Laskutus</a></li>
+            <li><a class="white-text" href="#!">Reklamaatio</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center">
+        <a class="brown-text text-lighten-3" href="index.html">verkkokauppa-onlinestore.fi</a> | Powered by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> | Päivitetty <a class="brown-text text-lighten-3">23.03.2016</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+</html>

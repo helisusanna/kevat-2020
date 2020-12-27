@@ -1,0 +1,70 @@
+*{
+font-family:'Pathway Gothic One', sans-serif;
+font-size:large;
+}
+
+body{
+background-color:#151716;;
+}
+#top-navbar{
+    background-color:#151716;
+}
+#navbar-header{
+    background-color:#F2CE16;
+}
+
+.jumbotron{
+    background-color:#F2CE16;
+}
+h6, h2{
+    color:#B5B2A1;
+}
+#ajankohtaista-1, #ajankohtaista-2, #ajankohtaista-3, #ajankohtaista-4, #ajankohtaista-5{
+    padding:5%;
+    background-color:#F2EED8;
+}
+
+@media only screen and (max-width:768px){
+    #logo{
+    width:38%;
+    }
+    #faniposti{
+    display:none;
+    }
+    #tablet{
+    display:none;
+    }
+}
+@media only screen and (min-width:768px){
+    #logo{
+    width:50%;
+    }
+    #yhteys{
+    background-color:#212121;
+    }
+    #faniposti{
+    background-color:#212121;
+    }
+    #mobile{
+    display:none;
+    }
+    #fanibtn{
+    display:none;
+    }
+}
+@media only screen and (min-width:1201px){
+    #logo{
+    width:80%;
+    }
+    *{
+    font-size:20px;
+    }
+    #karuselli{
+    display:none;
+    }
+}
+@media only screen and (max-width:1200px){
+    #desktop{
+    display:none;
+    }
+}
