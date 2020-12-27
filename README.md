@@ -1,1 +1,2 @@
 # kevat-2020
+Keväällä 2020 olen tehnyt sovelluksia käyttäen JavaScriptia, PHP, Python sekä luonut verkkosivuja frameworkeilla W3, Materialize ja Bootstrap. Sovelluksissa ei kummempia muotoiluja ole. Osa sovelluksista vaatii palvelimen toimiakseen.
